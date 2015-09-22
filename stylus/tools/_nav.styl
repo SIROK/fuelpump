@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    $NAV
+\*------------------------------------*/
+/**
+ * Nav abstraction as per: csswizardry.com/2011/09/the-nav-abstraction
+ * When used on an `ol` or `ul`, this class throws the list into horizontal mode
+ * e.g.:
+ *
+   <ul class=nav>
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ *
+ * Demo: jsfiddle.net/inuitcss/Vnph4
+ *
+ * @Credit
+ * Thanks to https://github.com/csswizardry/inuit.css
+ *
+ */
+.nav
+    list-style:none
+    margin-left:0
+    @extend .cf
+
+    > li
+
+        &,
+        > a
+            display:inline-block
+           *display:inline
+            zoom:1

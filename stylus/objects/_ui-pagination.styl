@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    $UI-PAGINATION
+\*------------------------------------*/
+/**
+ * UI Pagination
+ *
+ * UI base Pagination style. It is very inspired by Bootstrap
+ * style.
+ *
+ * @Example
+ * <ul class="pagination">
+ *   <li class="active pagination-item"><a href="#">1</a></li>
+ *   <li class="pagination-item"><a href="#">2</a></li>
+ *   <li class="pagination-item"><a href="#">3</a></li>
+ *   <li class="pagination-item"><a href="#">4</a></li>
+ *   <li class="pagination-item"><a href="#">5</a></li>
+ * </ul>
+ *
+ * @Credit
+ * Thanks to csswizardry.com/2011/09/the-nav-abstraction and http://codyhouse.co/gem/css-pagination/
+ */
+.pagination
+  @extend .nav
+
+.pagination
+  > .pagination-item
+    margin 0 .2em
+    > a
+      vertical-align middle
+      padding 6px 14px
+      border-radius 0.25em
+      border 1px solid #e6e6e6
+      color black
+      transition background, color, border-color, animation-duration animation-timing-function
+      &:hover
+        background #f2f2f2
+        color #fff
+        border-color #ddd
+
+  > .pagination-item.active a
+     background brand-color
+     color #fff
+     border-color #ddd

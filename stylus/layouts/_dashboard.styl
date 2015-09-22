@@ -1,0 +1,50 @@
+/*------------------------------------*\
+    $DASHBOARD
+\*------------------------------------*/
+/**
+ *
+ * @Example
+ * <div class="dashboar__wrapper">
+ *   <aside class="dashboard__aside"></aside>
+ *   <main class="dashboard__main"></main>
+ * </div>
+ *
+ * @Credit
+ * Thanks to http://codyhouse.co/gem/secondary-expandable-navigation/
+ */
+.dashboar__wrapper
+  height 100%
+
+
+.dashboard__main,
+.dashboard__aside
+  overflow auto
+  height 100%
+  max-height 100%
+
+
+.dashboard__aside
+  position absolute
+  top 0
+  left 0
+  bottom 0
+  width 210px
+  /**
+   * Hack
+   *
+   * iOS Safari scrolling causes HTML elements with a delay
+   */
+  transform translate3d(0,0,0)
+
+
+.dashboard__main
+  position relative
+  float right
+  top 0
+  width calc(100% - 210px)
+  /**
+   * Hack
+   *
+   * iOS Safari scrolling causes HTML elements with a delay
+   */
+  transform translate3d(0,0,0)
