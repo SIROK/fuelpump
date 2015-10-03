@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>bdash</title>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="The CSS toolkit of SIROK, Inc.">
+  <meta name="keywords" content="HTML, CSS, Stylus, toolkit, bootstrap, front-end, frontend, web development">
+
+  <meta property="og:url"          content='http://SIROK.github.io/bdash' />
+  <meta property="og:type"         content="website" />
+  <meta property="og:locale"       content="en_US" />
+  <meta property="og:title"        content="bdash" />
+  <meta property="og:site_name"    content="bdash" />
+  <meta property="og:description"  content="https://github.com/SIROK/bdash" />
+
+  <link rel="stylesheet" href="./assets/css/bdash.min.css" />
+  <link rel="stylesheet" href="./assets/template/css/main.css" />
+</head>
+<body>
+
+
+<div class="wrapper dashboard-wrapper">
+
+
+<aside class="dashboard-aside">
+  <div class="aside__content">
+    <div class="aside__header">
+      <a href="#top">bdash<br><span>Style Guide v2.0.0</span></a>
+    </div>
+    <nav class="aside__navigation">
+      <h3>Elements</h3>
+      <ul>
+        <li><a href="#button">Button</a></li>
+        <li><a href="#switch">Switch</a></li>
+        <li><a href="#pagination">Pagination</a></li>
+        <li><a href="#label">Label</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#loading">Loading</a></li>
+        <li><a href="#tabnav">Tab Navi</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+
+
+<main class="dashboard-main">
+  <div class="main__header cf" id="top">
+    <div am-menu-hamburger class="header__menu"><span></span></div>
+    <div class="header__github">
+      <a href="https://github.com/SIROK/bdash" target="_blank">
+        <span class="octicon octicon-mark-github"></span>
+        View on
+        <span class="octicon octicon-logo-github"></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="main__content">
+    <h1 class="element__title" id="button">Button</h1>
+    <p></p>
+    <div class="element-example">
+      <h2 class="element-example__title">UI Button</h2>
+      <p class="element-example__description">
+        It is base of button. It is solid button. Please use button tag regardless it does not have a link. If it has a link, please specify role
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <button class="btn" type="button">Button</button>
+        <a class="btn" href="#" role="button">Button</a>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;button class="btn" type="button"&gt;Button&lt;/button&gt;
+&lt;a class="btn" href="#" role="button"&gt;Button&lt;/a&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+    <div class="element">
+      <h2 class="element-example__title">Fill Button</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <button class="btn -fill" type="button">Fill Button</button>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;button class="btn -fill" type="button"&gt;Fill Button&lt;/button&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+    <div class="element">
+      <h2 class="element-example__title">Button Style</h2>
+      <p class="element-example__description">
+        Button Style
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <button class="btn -soft" type="button">Soft Button</button>
+        <button class="btn -hard" type="button">Hard Button</button>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;button class="btn -soft" type="button"&gt;Soft Button&lt;/button&gt;
+&lt;button class="btn -hard" type="button"&gt;Hard Button&lt;/button&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+    <div class="element">
+      <h2 class="element-example__title">Sizing Button</h2>
+      <p class="element-example__description">
+        Sizing Button
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <button class="btn -small" type="button">Small Button</button>
+        <button class="btn -large" type="button">Large Button</button>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;button class="btn -small" type="button"&gt;Small Button&lt;/button&gt;
+&lt;button class="btn -large" type="button"&gt;Large Button&lt;/button&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+
+    <div class="element">
+      <h2 class="element-example__title">Buttons</h2>
+      <p class="element-example__description">
+        Function
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <button class="btn -default" type="button">Default</button>
+        <button class="btn -success" type="button">Success</button>
+        <button class="btn -warning" type="button">Warning</button>
+        <button class="btn -danger" type="button">Danger</button>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;button class="btn -default" type="button"&gt;Default&lt;/button&gt;
+&lt;button class="btn -success" type="button"&gt;Success&lt;/button&gt;
+&lt;button class="btn -warning" type="button"&gt;Warning&lt;/button&gt;
+&lt;button class="btn -warning" type="button"&gt;Danger&lt;/button&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+    <div class="element">
+      <h2 class="element-example__title">Fill Buttons</h2>
+      <p class="element-example__description">
+        Function
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <button class="btn -default -fill" type="button">Default</button>
+        <button class="btn -success -fill" type="button">Success</button>
+        <button class="btn -warning -fill" type="button">Warning</button>
+        <button class="btn -danger -fill" type="button">Danger</button>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;button class="btn -default -fill" type="button"&gt;Default&lt;/button&gt;
+&lt;button class="btn -success -fill" type="button"&gt;Success&lt;/button&gt;
+&lt;button class="btn -sucess -fill" type="button"&gt;Warning&lt;/button&gt;
+&lt;button class="btn -danger -fill" type="button"&gt;Danger&lt;/button&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+
+
+    <div class="element">
+      <h2 class="element-example__title">Button Group</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <div class="btn-group">
+          <button class="btn" type="button">Default</button>
+          <button class="btn" type="button">Default</button>
+          <button class="btn" type="button">Default</button>
+        </div>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;div class="btn-group"&gt;
+  &lt;button class="btn" type="button"&gt;Default&lt;/button&gt;
+  &lt;button class="btn" type="button"&gt;Default&lt;/button&gt;
+  &lt;button class="btn" type="button"&gt;Default&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+    <div class="element">
+      <h2 class="element-example__title">Button Fill Group</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <div class="btn-group">
+          <button class="btn -fill" type="button">Default</button>
+          <button class="btn -fill" type="button">Default</button>
+          <button class="btn -fill" type="button">Default</button>
+        </div>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;div class="btn-group"&gt;
+  &lt;button class="btn -fill" type="button"&gt;Default&lt;/button&gt;
+  &lt;button class="btn -fill" type="button"&gt;Default&lt;/button&gt;
+  &lt;button class="btn -fill" type="button"&gt;Default&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+    <h1 class="element__title" id="switch">Switch</h1>
+
+    <div class="element">
+      <h2 class="element-example__title">UI Base switch</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <div>
+          <input class='switch' id='cb1' type='checkbox'>
+          <label class='switch-btn' for='cb1'></label>
+        </div>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+        <pre><code class="hljs html">&lt;div&gt;
+  &lt;input class="swithc" id='cb1' type='checkbox'&gt;
+  &lt;label class="switch-btn" for='cb1'&gt;&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+    <div class="element">
+      <h2 class="element-example__title">iOS Switch Button</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <div>
+          <input class='switch -ios' id='cb2' type='checkbox'>
+          <label class='switch-btn' for='cb2'></label>
+        </div>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;div&gt;
+  &lt;input class="swithc -ios" id='cb2' type='checkbox'&gt;
+  &lt;label class="switch-btn" for='cb2'&gt;&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+
+
+
+    <h1 class="element__title" id="pagination">Pagination</h1>
+    <div class="element">
+      <h2 class="element-example__title">Base UI Pegination</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+
+    <div class="code-example">
+      <div class="code-example__output">
+        <ul class="pagination">
+          <li class="active pagination-item"><a href="#">1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a href="#">5</a></li>
+        </ul>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;ul class="pagination"&gt;
+  &lt;li class="pagination-item active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="pagination-item"&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="pagination-item"&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="pagination-item"&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+
+
+
+    <h1 class="element__title" id="label">Label</h1>
+    <div class="element">
+      <h2 class="element-example__title">Base UI label</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+
+    <div class="code-example">
+      <div class="code-example__output">
+        <div>Label<span class="label">?</span></div>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;div&gt;Label&lt;span class="label"&gt;?&lt;/span&gt;&lt;/div&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+
+    <h1 class="element__title" id="table">Table</h1>
+    <div class="element">
+      <h2 class="element-example__title">Base Table</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <table class="table">
+          <thead class="table-header">
+            <tr class="table-row">
+              <th class="table-header-column">ID</th>
+              <th class="table-header-column">Name</th>
+              <th class="table-header-column">Actor</th>
+              <th class="table-header-column">Type</th>
+              <th class="table-header-column"></th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr class="table-row">
+              <td class="table-body-column">1</td>
+              <td class="table-body-column">R2-D2</td>
+              <td class="table-body-column">Kenny Baker</td>
+              <td class="table-body-column">Droids</td>
+              <td class="table-body-column"><button class="btn -fill -danger">Remove</button></td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-body-column">2</td>
+              <td class="table-body-column">C-3PO</td>
+              <td class="table-body-column">Anthony Daniels</td>
+              <td class="table-body-column">Droids</td>
+              <td class="table-body-column"><button class="btn -fill -danger">Remove</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;table class="table"&gt;
+  &lt;thead class="table-header"&gt;
+    &lt;tr class="table-row"&gt;
+      &lt;th class="table-header-column"&gt;ID&lt;/th&gt;
+      &lt;th class="table-header-column"&gt;Name&lt;/th&gt;
+      &lt;th class="table-header-column"&gt;Actor&lt;/th&gt;
+      &lt;th class="table-header-column"&gt;Type&lt;/th&gt;
+      &lt;th class="table-header-column"&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class="table-body"&gt;
+    &lt;tr class="table-row"&gt;
+      &lt;td class="table-body-column"&gt;1&lt;/td&gt;
+      &lt;td class="table-body-column"&gt;R2-D2&lt;/td&gt;
+      &lt;td class="table-body-column"&gt;Kenny Baker&lt;/td&gt;
+      &lt;td class="table-body-column"&gt;Droids&lt;/td&gt;
+      &lt;td class="table-body-column"&gt;&lt;button class="btn -danger -fill"&gt;Remove&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="table-row"&gt;
+      &lt;td class="table-body-column"&gt;2&lt;/td&gt;
+      &lt;td class="table-body-column"&gt;C-3PO&lt;/td&gt;
+      &lt;td class="table-body-column"&gt;Anthony Daniels&lt;/td&gt;
+      &lt;td class="table-body-column"&gt;Droids&lt;/td&gt;
+      &lt;td class="table-body-column"&gt;&lt;button class="btn -danger -fill"&gt;Remove&lt;/button&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+    <div class="element">
+      <h2 class="element-example__title">Striped Table</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <table class="table -striped">
+          <thead class="table-header">
+            <tr class="table-row">
+              <th class="table-header-column">ID</th>
+              <th class="table-header-column">Name</th>
+              <th class="table-header-column">Actor</th>
+              <th class="table-header-column">Type</th>
+              <th class="table-header-column"></th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr class="table-row">
+              <td class="table-body-column">1</td>
+              <td class="table-body-column">R2-D2</td>
+              <td class="table-body-column">Kenny Baker</td>
+              <td class="table-body-column">Droids</td>
+              <td class="table-body-column"><button class="btn -fill -danger">Remove</button></td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-body-column">2</td>
+              <td class="table-body-column">C-3PO</td>
+              <td class="table-body-column">Anthony Daniels</td>
+              <td class="table-body-column">Droids</td>
+              <td class="table-body-column"><button class="btn -fill -danger">Remove</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+        <pre><code class="hljs html">&lt;table class="table -striped"&gt;
+    &lt;thead class="table-header"&gt;
+      &lt;tr class="table-row"&gt;
+        &lt;th class="table-header-column"&gt;ID&lt;/th&gt;
+        &lt;th class="table-header-column"&gt;Name&lt;/th&gt;
+        &lt;th class="table-header-column"&gt;Actor&lt;/th&gt;
+        &lt;th class="table-header-column"&gt;Type&lt;/th&gt;
+        &lt;th class="table-header-column"&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody class="table-body"&gt;
+      &lt;tr class="table-row"&gt;
+        &lt;td class="table-body-column"&gt;1&lt;/td&gt;
+        &lt;td class="table-body-column"&gt;R2-D2&lt;/td&gt;
+        &lt;td class="table-body-column"&gt;Kenny Baker&lt;/td&gt;
+        &lt;td class="table-body-column"&gt;Droids&lt;/td&gt;
+        &lt;td class="table-body-column"&gt;&lt;button class="btn -danger -fill"&gt;Remove&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr class="table-row"&gt;
+        &lt;td class="table-body-column"&gt;2&lt;/td&gt;
+        &lt;td class="table-body-column"&gt;C-3PO&lt;/td&gt;
+        &lt;td class="table-body-column"&gt;Anthony Daniels&lt;/td&gt;
+        &lt;td class="table-body-column"&gt;Droids&lt;/td&gt;
+        &lt;td class="table-body-column"&gt;&lt;button class="btn -danger -fill"&gt;Remove&lt;/button&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+
+
+
+    <h1 class="element__title" id="loading">Loading</h1>
+    <div class="element">
+      <h2 class="element-example__title">Circle Loading</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <div class="loading -circle">Loading...</div>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;div class="loading -circle"&gt;Loading...&lt;/div&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+
+
+
+    <h1 class="element__title" id="tabnav">Tab navigation</h1>
+    <div class="element">
+      <h2 class="element-example__title">Base Tab Navigation</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        <div class="tab">
+          <div class="tab-item -active">Tab 1</div>
+          <div class="tab-item">Tab 2</div>
+          <div class="tab-item">Tab 3</div>
+          <div class="tab-item">Tab 4</div>
+        </div>
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;div class="tab"&gt;
+  &lt;div class="tab-item -active"&gt;Tab 1&lt;/div&gt;
+  &lt;div class="tab-item"&gt;Tab 2&lt;/div&gt;
+  &lt;div class="tab-item"&gt;Tab 3&lt;/div&gt;
+  &lt;div class="tab-item"&gt;Tab 4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+
+    <h1 class="element__title" id="dashboard">Dashboard</h1>
+
+     <div class="element">
+      <h2 class="element-example__title">UI Base Dashboard</h2>
+      <p class="element-example__description">
+      </p>
+    </div><!-- .element -->
+    <div class="code-example">
+      <div class="code-example__output">
+        As you can see, it is UI Base dashboard layouts
+      </div><!-- .code-example__output -->
+      <div class="code-example__block">
+      <pre><code class="hljs html">&lt;div class="dashboard"&gt;
+  &lt;aside class="dashboard-aside"&gt;&lt;/main&gt;
+  &lt;main class="dashboard-main"&gt;&lt;/main&gt;
+&lt;/div&gt;</code></pre>
+      </div><!-- .code-example__block -->
+    </div><!-- .code-example -->
+
+  </div>
+
+  <div class="main__footer">
+    <ul class="main__footer__sitemap">
+      <li>
+        <a href="https://github.com/sotayamashita/bdash/blob/master/LICENSE.md" target="_blank">MIT © SIROK, Inc.</a>
+      </li>
+      <li>
+        <a href="https://github.com/sotayamashita/bdash/blob/master/CONTRIBUTING.md" target="_blank">Contribution</a>
+      </li>
+      <li>
+        <a href="https://github.com/sotayamashita/bdash/issues" target="_blank">Issues</a>
+      </li>
+      <li>
+        <a href="https://github.com/sotayamashita/bdash/blob/master/CHANGELOG.md" target="_blank">Changelog</a>
+      </li>
+    </ul>
+  </div>
+
+</main>
+</div><!-- .wrapper-->
+
+<!-- js -->
+<script src="./assets/js/main.js" async ></script>
+
+<!-- hightlight.js -->
+<script src="./assets/template/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
