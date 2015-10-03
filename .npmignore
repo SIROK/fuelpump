@@ -1,5 +1,3 @@
 .gitignore
-
 node_modules
-
-gulpfile.coffee
+gulpfile.babel.js
