@@ -1,0 +1,18 @@
+{
+  "name": "fuelpump",
+  "version": "0.0.1",
+  "description": "CSS toolkit for SIROK",
+  "author": "Sota Yamashita <sota_yamashita@sirok.co.jp>",
+  "license": "MIT",
+  "repository": "SIROK/fuelpump",
+  "scripts": {
+    "clean": "rimraf dest",
+    "setup": "mkdir dest && touch dest/fuelpump.css",
+    "build": "stylus stylus/fuelpump.styl -o dest/fuelpump.css -P srk- -u autoprefixer-stylus --sourcemap-inline",
+    "prepublish": "npm run clean && npm run setup && npm run build"
+  },
+  "devDependencies": {
+    "rimraf": "^2.5.1",
+    "stylus": "^0.53.0"
+  }
+}
