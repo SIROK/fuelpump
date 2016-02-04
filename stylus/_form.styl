@@ -1,0 +1,121 @@
+.form__text,
+.form__password,
+.form__email,
+.form__number,
+.form__tel,
+.form__url,
+.form__select,
+.form__textarea {
+  padding: 7px 8px;
+  border-radius: 2px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  color: #777;
+  box-shadow: none;
+  outline: none;
+  min-height: 34px;
+  vertical-align: middle;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+
+
+
+
+/**
+ * Custom Form Select
+ *
+ * @Description
+ * Custom <select>s are also available—just add `.select`.
+ *
+ * @Example
+ * <div class="select">
+ *   <span class="select-placeholder" aria-haspopup="false" aria-expanded="false">
+ *     Select Login Option
+ *   </span>
+ *   <ul class="select-menu">
+ *     <li class="select-item">Facebook</li>
+ *     <li class="select-item">Google</li>
+ *     <li class="select-item">Email</li>
+ *   </ul>
+ * <div>
+ *
+ * @Codepen
+ * http://codepen.io/fuelpump/pen/ZQMXmr
+ */
+.select {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 325px;
+  color: #ccc;
+  vertical-align: middle;
+  text-align: left;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.select-placeholder {
+  position: relative;
+  display: block;
+  background-color: #7f7f87;
+  z-index: 1;
+  padding: 1em;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background: red;
+  }
+
+  &:after {
+    content: '';
+    border-width: 7px 5px 0;
+    border-style: solid;
+    border-top-color: #fff;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+}
+
+.select-menu {
+  // display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  margin: 5px 0 0 0;
+  padding: 0;
+  z-index: 100;
+  background #7f7f87;
+}
+
+.select-item {
+  display: block;
+  text-align: left;
+  padding: 0.8em 1em 0.8em 1em;
+  color: #999;
+  cursor: pointer;
+
+  &:not(:first-child) {
+    border-top: 1px solid #4f5059;
+  }
+
+  &:hover {
+    background: #4ebbf0;
+    color: #fff;
+  }
+}
