@@ -1,0 +1,40 @@
+/**
+ * Default buttons
+ *
+ * @Example
+ * <button class="btn disabled" type="button">Button button</button>
+ * <a class="btn disabled">Link button</a>
+ *
+ * @Codepen
+ *
+ */
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 2px;
+  user-select: none;
+  background #fff;
+
+  color: #2c82bc;
+  border: 1px solid #2c82bc;
+
+  &:hover {
+    color: #fff;
+    background #2c82bc;
+  }
+}
+
+.btn:disabled,
+.btn.disabled {
+  cursor: default;
+  background: #fff;
+  border: 1px solid #5992B9;
+  color: #5992B9;
+}
