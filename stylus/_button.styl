@@ -18,16 +18,16 @@
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: brand-border-radius;
   user-select: none;
   background #fff;
 
-  color: #2c82bc;
-  border: 1px solid #2c82bc;
+  color: brand-color;
+  border: 1px solid brand-color;
 
   &:hover {
     color: #fff;
-    background #2c82bc;
+    background brand-color;
   }
 }
 
@@ -54,14 +54,6 @@
  * <button class="btn disabled" type="button">Button button</button>
  * <a class="btn disabled">Link button</a>
  */
-.btn:disabled,
-.btn.disabled {
-  cursor: default;
-  background: #efefef;
-  border: 1px solid #8BA2B1;
-  color: #8BA2B1;
-}
-
 .btn-danger:disabled,
 .btn-danger.disabled {
   cursor: default;
