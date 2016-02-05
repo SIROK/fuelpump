@@ -2,8 +2,8 @@
  * Default buttons
  *
  * @Example
- * <button class="btn disabled" type="button">Button button</button>
- * <a class="btn disabled">Link button</a>
+ * <button class="btn" type="button">Button button</button>
+ * <a class="btn">Link button</a>
  *
  * @Codepen
  *
@@ -31,10 +31,59 @@
   }
 }
 
+
+/**
+ * Danger buttons
+ */
+.btn-danger {
+  color: #E84040;
+  border: 1px solid #E84040;
+
+  &:hover {
+    color: #fff;
+    background #E84040;
+  }
+}
+
+
+
+/**
+ * Disabled Button
+ *
+ * @Example
+ * <button class="btn disabled" type="button">Button button</button>
+ * <a class="btn disabled">Link button</a>
+ */
 .btn:disabled,
 .btn.disabled {
   cursor: default;
-  background: #fff;
-  border: 1px solid #5992B9;
-  color: #5992B9;
+  background: #efefef;
+  border: 1px solid #8BA2B1;
+  color: #8BA2B1;
+}
+
+.btn-danger:disabled,
+.btn-danger.disabled {
+  cursor: default;
+  background #efefef;
+  border: 1px solid #E09D9D;
+  color: #E09D9D;
+}
+
+
+
+
+
+/**
+ * Small Button
+ *
+ * @Example
+ * <button class="btn btn-s" type="button">Button button</button>
+ * <a class="btn btn-s">Link button</a>
+ *
+ * @Codepen
+ *
+ */
+btn.btn-s {
+  padding: 2px 5px;
 }
