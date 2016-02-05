@@ -1,107 +1,86 @@
-/*! sanitize.css v3.0.0 | CC0 1.0 Public Domain | github.com/10up/sanitize.css */
+/*! sanitize.css v3.2.0 | CC0 1.0 Public Domain | github.com/10up/sanitize.css */
 
 /*
  * Normalization
  */
 
-audio:not([controls]) {
-	display: none; /* Chrome 44-, iOS 8+, Safari 9+ */
-}
+audio:not([controls])
+	display: none // Chrome 44-, iOS 8+, Safari 9+
 
-button {
-	overflow: visible; /* Internet Explorer 11- */
-	-webkit-appearance: button; /* iOS 8+ */
-}
+button
+	-webkit-appearance: button // iOS 8+
+	overflow: visible // Internet Explorer 11-
 
-details {
-	display: block; /* Edge 12+, Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+ */
-}
+details
+	display: block // Edge 12+, Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+
 
-html {
-	-ms-overflow-style: -ms-autohiding-scrollbar; /* Edge 12+, Internet Explorer 11- */
-	overflow-y: scroll; /* All browsers without overlaying scrollbars */
-	-webkit-text-size-adjust: 100%; /* iOS 8+ */
-}
+html
+	-ms-overflow-style: -ms-autohiding-scrollbar // Edge 12+, Internet Explorer 11-
+	overflow-y: scroll // All browsers without overlaying scrollbars
+	-webkit-text-size-adjust: 100% // iOS 8+
 
-input {
-	-webkit-border-radius: 0 /* iOS 8+ */
-}
+input
+	-webkit-border-radius: 0 // iOS 8+
 
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	-webkit-appearance: button;/* iOS 8+ */
-}
+	&[type="button"],
+	&[type="reset"],
+	&[type="submit"]
+		-webkit-appearance: button // iOS 8+
 
-input[type="number"] {
-	width: auto;/* Firefox 36+ */
-}
+	&[type="number"]
+		width: auto // Firefox 36+
 
-input[type="search"] {
-	-webkit-appearance: textfield;/* Chrome 45+, Safari 9+ */
-}
+	&[type="search"]
+		-webkit-appearance: textfield // Chrome 45+, Safari 9+
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;/* Chrome 45+, Safari 9+ */
-}
+		&::-webkit-search-cancel-button,
+		&::-webkit-search-decoration
+			-webkit-appearance: none // Chrome 45+, Safari 9+
 
-main {
-	display: block; /* Android 4.3-, Internet Explorer 11-, Windows Phone 8.1+ */
-}
+main
+	display: block // Android 4.3-, Internet Explorer 11-, Windows Phone 8.1+
 
-pre {
-	overflow: auto; /* Internet Explorer 11- */
-}
+pre
+	overflow: auto // Internet Explorer 11-
 
-progress {
-	display: inline-block; /* Internet Explorer 11-, Windows Phone 8.1+ */
-}
+progress
+	display: inline-block // Internet Explorer 11-, Windows Phone 8.1+
 
-small {
-	font-size: 75%; /* All browsers */
-}
+small
+	font-size: small-font-size is defined ? small-font-size : 75% // All browsers
 
-summary {
-	display: block; /* Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+ */
-}
+summary
+	display: block // Firefox 40+, Internet Explorer 11-, Windows Phone 8.1+
 
-svg:not(:root) {
-	overflow: hidden; /* Internet Explorer 11- */
-}
+svg:not(:root)
+	overflow: hidden // Internet Explorer 11-
 
-template {
-	display: none; /* Android 4.3-, Internet Explorer 11-, iOS 7-, Safari 7-, Windows Phone 8.1+ */
-}
+template
+	display: none // Android 4.3-, Internet Explorer 11-, iOS 7-, Safari 7-, Windows Phone 8.1+
 
-textarea {
-	overflow: auto; /* Edge 12+, Internet Explorer 11- */
-}
+textarea
+	overflow: auto // Edge 12+, Internet Explorer 11-
 
-[hidden] {
-	display: none; /* Internet Explorer 10- */
-}
+[hidden]
+	display: none // Internet Explorer 10-
 
 /*
  * Universal inheritance
  */
 
 *,
-:before,
-:after {
-	box-sizing: inherit;
-}
+::before,
+::after
+	box-sizing: inherit
 
-* {
-	font-size: inherit;
-	line-height: inherit;
-}
+*
+	font-size: inherit
+	line-height: inherit
 
-:before,
-:after {
-	text-decoration: inherit;
-	vertical-align: inherit;
-}
+::before,
+::after
+	text-decoration: inherit
+	vertical-align: inherit
 
 
 
@@ -109,73 +88,65 @@ textarea {
  * Opinionated defaults
  */
 
-/* specify the border style and width of all elements */
+// specify the border style and width of all elements
 
 *,
-:before,
-:after {
-	border-style: solid;
-	border-width: 0;
-}
+::before,
+::after
+	border-style: solid
+	border-width: 0
 
-/* specify the core styles of all elements */
+// specify the core styles of all elements
 
-* {
-	background-repeat: no-repeat;
-	margin: 0;
-	padding: 0;
-}
+*
+	background-repeat: background-repeat is defined ? background-repeat : no-repeat
+	margin: 0
+	padding: 0
 
-/* specify the root styles of the document */
+// specify the root styles of the document
 
-:root {
-	background-color: #ffffff;
-	box-sizing: border-box;
-	color: #000000;
-	cursor: default;
-	font: 100%/1.5 sans-serif;
-	text-rendering: optimizeLegibility;
-}
+:root
+	background-color: root-background-color is defined ? root-background-color : #ffffff
+	box-sizing: root-box-sizing is defined ? root-box-sizing : border-box
+	color: root-color is defined ? root-color : #000000
+	cursor: root-cursor is defined ? root-cursor : default
+	font: (root-font-size is defined ? root-font-size : 100%)\/(root-line-height is defined ? root-line-height : 1.5) (root-font-family is defined ? root-font-family : sans-serif)
 
-/* specify the text decoration of anchors */
+// specify the text decoration of anchors
 
-a {
-	text-decoration: none;
-}
+a
+	text-decoration: anchor-text-decoration is defined ? anchor-text-decoration : none
 
-/* specify the alignment of media elements */
+// specify the alignment of media elements
 
 audio,
 canvas,
 iframe,
 img,
 svg,
-video {
-	vertical-align: middle;
-}
+video
+	vertical-align: media-element-vertical-align is defined ? media-element-vertical-align : middle
 
-/* specify the background color of form elements */
-
-button,
-input,
-select,
-textarea {
-	background-color: transparent;
-}
-
-/* specify the inherited color and font of form elements */
+// specify the background color of form elements
 
 button,
 input,
 select,
-textarea {
-	color: inherit;
-	font-family: inherit;
-	font-style: inherit;
-	font-weight: inherit;
-}
+textarea
+	background-color: form-element-background-color is defined ? form-element-background-color : transparent
 
-/* specify the minimum height of form elements */
+// specify the inherited color and font of form elements
+
+button,
+input,
+select,
+textarea
+	color: inherit
+	font-family: inherit
+	font-style: inherit
+	font-weight: inherit
+
+// specify the minimum height of form elements
 
 button,
 [type="button"],
@@ -195,96 +166,91 @@ button,
 [type="url"],
 [type="week"],
 select,
-textarea {
-	min-height: 1.5em;
-}
+textarea
+	min-height: form-element-min-height is defined ? form-element-min-height : 1.5em
 
-/* specify the font family of code elements */
+// specify the font family of code elements
 
 code,
 kbd,
 pre,
-samp {
-	font-family: monospace, monospace;
-}
+samp
+	font-family: monospace-font-family is defined ? monospace-font-family : monospace, monospace
 
-/* specify the list style of nav lists */
+// specify the list style of nav lists
 
 nav ol,
-nav ul {
-	list-style: none;
-}
+nav ul
+	list-style: nav-list-style is defined ? nav-list-style : none
 
-/* specify the standard appearance of selects */
+// specify the standard appearance of selects
 
-select {
-	-moz-appearance: none;    /* Firefox 40+ */
-	-webkit-appearance: none /* Chrome 45+ */
-}
+select
+	-moz-appearance: none    // Firefox 40+
+	-webkit-appearance: none // Chrome 45+
 
-select::-ms-expand {
-	display: none;/* Edge 12+, Internet Explorer 11- */
-}
+	&::-ms-expand
+		display: none        // Edge 12+, Internet Explorer 11-
 
-select::-ms-value {
-	color: currentColor;/* Edge 12+, Internet Explorer 11- */
-}
+	&::-ms-value
+		color: currentColor  // Edge 12+, Internet Explorer 11-
 
-/* specify the border styling of tables */
+// specify the border styling of tables
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+table
+	border-collapse: table-border-collapse is defined ? table-border-collapse : collapse
+	border-spacing: table-border-spacing is defined ? table-border-spacing : 0
 
-/* specify the resizability of textareas */
+// specify the resizability of textareas
 
-textarea {
-	resize: vertical;
-}
+textarea
+	resize: textarea-resize is defined ? textarea-resize : vertical
 
-/* specify the background color, font color, and drop shadow of text selections */
+// specify the background color, font color, and drop shadow of text selections
 
-::-moz-selection {
-	background-color: #b3d4fc; /* required when declaring ::selection */
-	color: #4c2b03;
-	text-shadow: none;
-}
+::-moz-selection
+	background-color: selection-background-color is defined ? selection-background-color : #b3d4fc // required when declaring ::selection
+	color: selection-color is defined ? selection-color : #ffffff
+	text-shadow: selection-text-shadow is defined ? selection-text-shadow : none
 
-::selection {
-	background-color: #b3d4fc; /* required when declaring ::selection */
-	color: #4c2b03;
-	text-shadow: none;
-}
+::selection
+	background-color: selection-background-color is defined ? selection-background-color : #b3d4fc // required when declaring ::selection
+	color: selection-color is defined ? selection-color : #ffffff
+	text-shadow: selection-text-shadow is defined ? selection-text-shadow : none
 
-/* specify the progress cursor of updating elements */
+// specify the progress cursor of updating elements
 
-[aria-busy="true"] {
-	cursor: progress;
-}
+[aria-busy="true"]
+	cursor: progress
 
-/* specify the pointer cursor of trigger elements */
+// specify the pointer cursor of trigger elements
 
-[aria-controls] {
-	cursor: pointer;
-}
+[aria-controls]
+	cursor: pointer
 
-/* specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
+// specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements
 
-[aria-disabled] {
-	cursor: default;
-}
+[aria-disabled]
+	cursor: default
 
-/* specify the style of visually hidden yet accessible elements */
+// specify the style of visually hidden yet accessible elements
 
-[hidden][aria-hidden="false"] {
-	clip: rect(0 0 0 0);
-	display: inherit;
+[hidden][aria-hidden="false"]
+	clip: rect(0 0 0 0)
+	display: inherit
 	position: absolute
-}
 
-[hidden][aria-hidden="false"]:focus {
-	clip: auto;
-}
+	&:focus
+		clip: auto
 
-/*# sourceMappingURL=sanitize.css.map */
+// remove delay from tapping on clickable elements
+
+a,
+area,
+button,
+input,
+label,
+select,
+textarea,
+[tabindex]
+	touch-action: manipulation
