@@ -1,0 +1,62 @@
+/**
+ * Table
+ *
+ * @Example
+ * <table class="table">
+ *  <thead>
+ *    <tr class="table-header-row">
+ *      <th class="table-header-cell"></th>
+ *    </tr>
+ *  </thead>
+ *  <tbody>
+ *    <tr class="table-body-row">
+ *      <td class="table-body-cell">
+ *        <div class="table-content"></div>
+ *      </td>
+ *    </tr>
+ *  </tbody>
+ * </table>
+ *
+ * @Codepen
+ * http://codepen.io/fuelpump/pen/KVxOJK
+ */
+.table {
+  width: 100%;
+}
+
+.table-header-row,
+.table-body-row {
+  border-bottom: 4px solid #ededed;
+}
+
+.table-header-row {
+  text-align: left;
+  background-color: transparent;
+}
+
+.table-body-row {
+  box-shadow: 0 0 1 0 rgba(0, 0, 0, .1);
+  background: #fff;
+}
+
+.table-header-cell:first-of-type,
+.table-body-cell:first-of-type { padding: 6px 10px 6px 15px; }
+
+.table-header-cell:last-of-type,
+.table-body-cell:last-of-type  { padding: 6px 15px 6px 10px; }
+
+.table-header-cell {
+  user-select: none;
+  font-weight: bold;
+  font-size: 10px;
+  color: #859095;
+}
+
+.table-body-cell {
+  font-size: 12px;
+  color: #777777;
+}
+
+.table-content {
+  position: relative;
+}
