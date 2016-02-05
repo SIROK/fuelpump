@@ -3,8 +3,8 @@
  *
  * @Example
  * <div class="dashboard">
- *   <div class="dashboard__aside"></div>
- *   <div class="dashboard__main"></div>
+ *   <div class="dashboard-aside"></div>
+ *   <div class="dashboard-main"></div>
  * </div>
  *
  * @Codepen
@@ -21,7 +21,7 @@
   position: relative;
 }
 
-.dashboard__aside {
+.dashboard-aside {
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -35,25 +35,13 @@
   overflow-x: hidden;
   overflow-y: scroll;
   background: #4f5059;
-  transition: left .5s ease-in;
 }
 
-.dashboard__main {
+.dashboard-main {
   margin-left: 200px;
   background: #ededed;
   display: inline-block;
   overflow-x: hidden;
   overflow-y: scroll;
   flex-grow: 1;
-  transition: margin-left .5 ease-in;
-}
-
-@media (max-width: 980px) {
-  .dashboard__aside {
-    left: -200px;
-  }
-
-  .dashboard__main {
-    margin-left: 0;
-  }
 }
