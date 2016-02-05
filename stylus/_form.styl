@@ -1,11 +1,11 @@
-.form__text,
-.form__password,
-.form__email,
-.form__number,
-.form__tel,
-.form__url,
-.form__select,
-.form__textarea {
+.form-text,
+.form-password,
+.form-email,
+.form-number,
+.form-tel,
+.form-url,
+.form-select,
+.form-textarea {
   padding: 7px 8px;
   border-radius: 2px;
   font-size: 13px;
@@ -61,21 +61,25 @@
 .select-placeholder {
   position: relative;
   display: block;
-  background-color: #7f7f87;
+  border: 1px solid #ccc;
+  background: #fff;
   z-index: 1;
-  padding: 1em;
-  border-radius: 3px;
+  padding: 0.8em 1em 0.8em 1em;
+  border-radius: 2px;
   cursor: pointer;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #777;
 
   &:hover {
-    background: red;
+    opacity: .8;
   }
 
   &:after {
     content: '';
-    border-width: 7px 5px 0;
+    border-width: 8px 5px 0;
     border-style: solid;
-    border-top-color: #fff;
+    border-top-color: #ccc;
     border-right-color: transparent;
     border-left-color: transparent;
     border-bottom-color: transparent;
@@ -88,19 +92,20 @@
 }
 
 .select-menu {
-  // display: none;
+  margin: 0;
+  padding: 0;
   position: absolute;
-  overflow: hidden;
+  left: 0;
+  top: 0;
   width: 100%;
   background: #fff;
   border-radius: 2px;
-  top: 100%;
-  left: 0;
   list-style: none;
-  margin: 5px 0 0 0;
-  padding: 0;
   z-index: 100;
-  background #7f7f87;
+  background #fff;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .select-item {
@@ -109,13 +114,9 @@
   padding: 0.8em 1em 0.8em 1em;
   color: #999;
   cursor: pointer;
-
-  &:not(:first-child) {
-    border-top: 1px solid #4f5059;
-  }
+  font-family: sans-serif;
 
   &:hover {
-    background: #4ebbf0;
-    color: #fff;
+    background: rgba(44, 130, 180, .1);
   }
 }
