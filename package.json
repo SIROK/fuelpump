@@ -12,6 +12,7 @@
     "prepublish": "npm run clean && npm run setup && npm run build"
   },
   "devDependencies": {
+    "bigbang-css": "0.0.2",
     "rimraf": "^2.5.1",
     "stylus": "^0.53.0"
   }
