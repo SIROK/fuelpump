@@ -1,0 +1,44 @@
+/**
+ * @Title
+ * Dropdown
+ *
+ * @Type
+ * Presentational Components
+ *
+ * @Example
+ * <div class="p-Dropdown">
+ *   <button type="button">Choose Droid</button>
+ *   <ul class="p-Dropdown__list" aria-haspopup="false" aria-expanded="false" aria-disabled="false">
+ *     <li class="p-Dropdown__item">R2-D2</li>
+ *     <li class="p-Dropdown__item">C3PO</li>
+ *     <li class="p-Dropdown__item">BB8</li>
+ *   </ul>
+ * </div>
+ *
+ * @References
+ * https://www.w3.org/WAI/GL/wiki/Using_ARIA_menus
+ * http://terrillthompson.com/blog/474
+ *
+ */
+.p-Dropdown__list {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  margin: 0px 10px 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  transition: all 0.3s ease;
+  transform: scale(0);
+  transform-origin: top center;
+}
+
+.p-Dropdown__item {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 24px;
+  font-size: 15px;
+}
+
+.p-Dropdown__list[aria-haspopup="true"][aria-expanded="true"][aria-disabled="false"] {
+  transform: scale(1);
+}

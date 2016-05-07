@@ -1,5 +1,8 @@
 {
   "presets": ["es2015"],
+<<<<<<< 8ee8af6ba8e81b5c081b721c01ac91300dd7fe25
   "only": "gulpfile.babel.js",
+=======
+>>>>>>> Sun  8 May 2016 02:34:14 JST
   "retainLines": true
 }

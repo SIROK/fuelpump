@@ -1,0 +1,21 @@
+.c-Dashborad {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.c-Dashborad__aside {
+  display: flex;
+  flex: 0 200px;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.c-Dashborad__main {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
