@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.c-Dashborad__aside {
+.c-Dashborad__Aside {
   display: flex;
   flex: 0 200px;
   flex-direction: column;
@@ -14,7 +14,7 @@
   overflow-y: auto;
 }
 
-.c-Dashborad__main {
+.c-Dashborad__Main {
   flex: 1;
   overflow-x: hidden;
   overflow-y: auto;

@@ -8,10 +8,10 @@
  * @Example
  * <div class="p-Dropdown">
  *   <button type="button">Choose Droid</button>
- *   <ul class="p-Dropdown__list" aria-haspopup="false" aria-expanded="false" aria-disabled="false">
- *     <li class="p-Dropdown__item">R2-D2</li>
- *     <li class="p-Dropdown__item">C3PO</li>
- *     <li class="p-Dropdown__item">BB8</li>
+ *   <ul class="p-Dropdown__List" aria-haspopup="false" aria-expanded="false" aria-disabled="false">
+ *     <li class="p-Dropdown__List__Item">R2-D2</li>
+ *     <li class="p-Dropdown__List__Item">C3PO</li>
+ *     <li class="p-Dropdown__List__Item">BB8</li>
  *   </ul>
  * </div>
  *
@@ -20,7 +20,7 @@
  * http://terrillthompson.com/blog/474
  *
  */
-.p-Dropdown__list {
+.p-Dropdown__List {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
   margin: 0px 10px 0;
   right: 0;
@@ -31,7 +31,7 @@
   transform-origin: top center;
 }
 
-.p-Dropdown__item {
+.p-Dropdown__Item {
   display: flex;
   align-items: center;
   height: 32px;
@@ -39,6 +39,6 @@
   font-size: 15px;
 }
 
-.p-Dropdown__list[aria-haspopup="true"][aria-expanded="true"][aria-disabled="false"] {
+.p-Dropdown__List[aria-haspopup="true"][aria-expanded="true"][aria-disabled="false"] {
   transform: scale(1);
 }
